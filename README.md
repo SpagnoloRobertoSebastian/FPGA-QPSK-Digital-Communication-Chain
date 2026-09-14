@@ -2,6 +2,8 @@
 
 ### Fixed-Point DSP, Polyphase FIR and Hardware Optimization in Verilog
 
+![Digital Archite](result/fpga/QPSKDigitalCommunicationChain.png)
+
 ## Introduction
 
 This project implements a QPSK digital communication chain from
@@ -67,6 +69,8 @@ by the filter coefficient can be replaced by a simple sign selection:
 A 2:1 multiplexer selects between +h and -h according to the
 transmitted symbol.
 
+![Digital Architecture](images/mux.png)
+
 This removes the need for general-purpose multipliers in the FIR
 data path.
 
@@ -77,3 +81,43 @@ The mapper and upsampling operations were simplified at RTL level.
 Since the FIR only needs to distinguish between the sign of the
 current symbol and the absence of a symbol, the hardware representation
 was reduced to a 1-bit symbol representation.
+
+## Hardware-Efficient PRBS Synchronization
+
+The BER receiver requires synchronization between the received PRBS9
+sequence and the locally generated reference.
+
+A direct cross-correlation implementation would require additional
+hardware resources.
+
+Instead, a correlation-inspired sequential matching algorithm was
+implemented.
+
+For each candidate alignment:
+
+- If RX matches the local PRBS bit, the match counter is incremented.
+- If RX does not match, the local PRBS is shifted by one position.
+- After 30 consecutive matches, the transmitter and receiver are
+  considered synchronized.
+
+This approach approximates the detection of a correlation peak while
+significantly simplifying the required hardware.
+
+## BER Measurement
+
+Once synchronization is achieved, the received bits are compared
+against a locally generated PRBS9 sequence.
+
+The error detector uses:
+
+    error = RX XOR PRBS9_reference
+
+Two counters are used:
+
+- Error counter
+- Total received bit counter
+
+BER is calculated as:
+
+    BER = number_of_errors / number_of_received_bits
+

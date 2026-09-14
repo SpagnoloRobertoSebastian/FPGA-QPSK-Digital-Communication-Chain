@@ -39,3 +39,40 @@ S(8,7)
 8 total bits:
 - 1 sign bit
 - 7 fractional bits
+
+
+![Digital Architecture](images/SREvsNBF.png)
+
+Hardware resource optimization through numerical range analysis:
+
+| Block             | Representation |
+| ----------------- | -------------- |
+| PRBS9             | 1 bit          |
+| Mapper / Upsample | S(2,0)         |
+| FIR coefficients  | **S(8,7)**     |
+| Product           | S(10,7)        |
+| FIR accumulator   | **S(10,7)**    |
+| Decimator         | S(10,7)        |
+| Decision          | 1 bit          |
+
+## Multiplier Elimination
+
+Because QPSK symbols are represented as +1 and -1, multiplication
+by the filter coefficient can be replaced by a simple sign selection:
+
+    +1 × h = +h
+    -1 × h = -h
+
+A 2:1 multiplexer selects between +h and -h according to the
+transmitted symbol.
+
+This removes the need for general-purpose multipliers in the FIR
+data path.
+
+### Symbol Representation
+
+The mapper and upsampling operations were simplified at RTL level.
+
+Since the FIR only needs to distinguish between the sign of the
+current symbol and the absence of a symbol, the hardware representation
+was reduced to a 1-bit symbol representation.

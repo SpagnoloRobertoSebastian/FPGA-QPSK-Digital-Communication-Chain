@@ -142,3 +142,10 @@ The ILA allows for the visualization of the LED output, the Raised Cosine FIR fi
 The image shows the ILA display with phase = 0.
 
 ![Digital Architecture](result/fpga/ILAWaveform.png)
+
+# Development Tools
+
+- Verilog
+- Vivado
+- FPGA Artix A7
+- Python

@@ -20,6 +20,7 @@ each hardware stage and analyzing quantization error and overflow.
 The final architecture was implemented in Verilog and validated
 through simulation and FPGA testing using Vivado.
 
+![Digital Architecture](images/sys_arquitecture.png)
 
 ## Fixed-Point Design
 

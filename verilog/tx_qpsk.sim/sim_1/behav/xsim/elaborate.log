@@ -1,0 +1,31 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v" Line 1. Module prbs9 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/fir_polyf.v" Line 3. Module fir_polyf(NB_y=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/rx_downs.v" Line 2. Module rx_downs(NB_DATA=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/ber_count.v" Line 1. Module ber_count(SYNC_THR=30) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v" Line 1. Module prbs9 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v" Line 1. Module prbs9 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/fir_polyf.v" Line 3. Module fir_polyf(NB_y=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/rx_downs.v" Line 2. Module rx_downs(NB_DATA=10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/ber_count.v" Line 1. Module ber_count(SYNC_THR=30) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v" Line 1. Module prbs9 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.prbs9
+Compiling module xil_defaultlib.fir_polyf(NB_y=10)
+Compiling module xil_defaultlib.rx_downs(NB_DATA=10)
+Compiling module xil_defaultlib.ber_count(SYNC_THR=30)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

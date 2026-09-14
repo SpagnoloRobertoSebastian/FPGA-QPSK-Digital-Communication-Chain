@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/ber_count.v,1787729281,verilog,,D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/fir_polyf.v,,ber_count,,,,,,,,
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/fir_polyf.v,1787577154,verilog,,D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v,,fir_polyf,,,,,,,,
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v,1787092037,verilog,,D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/rx_downs.v,,prbs9,,,,,,,,
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/rx_downs.v,1787620651,verilog,,D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/top.v,,rx_downs,,,,,,,,
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top_ber.v,1787708322,verilog,,,,tb_top,,,,,,,,
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/top.v,1787728027,verilog,,D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top_ber.v,,top,,,,,,,,
+D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tx_qpsk/tx_qpsk.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,

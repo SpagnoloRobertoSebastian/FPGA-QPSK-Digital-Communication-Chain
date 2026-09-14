@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+ERROR: [VRFC 10-4982] syntax error near 'end' [D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top.v:42]
+ERROR: [VRFC 10-8549] Verilog 2000 keyword 'end' used in incorrect context [D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top.v:42]
+ERROR: [VRFC 10-8530] module 'tb_top' is ignored due to previous errors [D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top.v:5]

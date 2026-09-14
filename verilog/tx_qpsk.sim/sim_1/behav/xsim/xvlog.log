@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/ber_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ber_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/fir_polyf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_polyf
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/prbs9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prbs9
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/rx_downs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_downs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/ProyProcom2026/Lab4/Tx_QPSK_v/tb_top_ber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

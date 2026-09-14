@@ -1,0 +1,120 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9B315DBCCD9186",
+      "device": "xc7a35ticsg324-1L",
+      "gen_directory": "../../../../tx_qpsk.gen/sources_1/bd/VIO",
+      "name": "VIO",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vio_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "VIO_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "probe_in0_0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "probe_out0_0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "probe_out1_0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "probe_out2_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "VIO_vio_0_0",
+        "xci_path": "ip\\VIO_vio_0_0\\VIO_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "1"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          },
+          "C_PROBE_IN0_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "vio_0/clk"
+        ]
+      },
+      "probe_in0_0_1": {
+        "ports": [
+          "probe_in0_0",
+          "vio_0/probe_in0"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "probe_out0_0"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "probe_out1_0"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "probe_out2_0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../ber_count.v" \
+"../../../../../fir_polyf.v" \
+"../../../../../prbs9.v" \
+"../../../../../rx_downs.v" \
+"../../../../../top.v" \
+"../../../../../tb_top_ber.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

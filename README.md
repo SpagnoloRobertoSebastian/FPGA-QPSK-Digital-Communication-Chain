@@ -103,6 +103,8 @@ For each candidate alignment:
 This approach approximates the detection of a correlation peak while
 significantly simplifying the required hardware.
 
+![Digital Architecture](result/testbench/sincronizaciónRxTxBER.png)
+
 ## BER Measurement
 
 Once synchronization is achieved, the received bits are compared
@@ -132,3 +134,11 @@ BER is calculated as:
 ![Digital Architecture](result/fixed_vs_floatt/constelation_phase1.png)
 ![Digital Architecture](result/fixed_vs_floatt/constelation_phase2.png)
 ![Digital Architecture](result/fixed_vs_floatt/constelation_phase3.png)
+
+## VIO and ILA Implementation on FPGA
+The VIO (Virtual Input/Output) and ILA (Integrated Logic Analyzer) were implemented on the Artix-7 FPGA.
+The VIO controls the reset, four switches, and LED indicators.
+The ILA allows for the visualization of the LED output, the Raised Cosine FIR filter output, and the downsampler output.
+The image shows the ILA display with phase = 0.
+
+![Digital Architecture](result/fpga/ILAWaveform.png)

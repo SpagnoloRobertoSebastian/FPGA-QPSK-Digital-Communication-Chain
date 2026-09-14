@@ -121,3 +121,5 @@ BER is calculated as:
 
     BER = number_of_errors / number_of_received_bits
 
+## Raised Cosine FIR coefficients — Floating Point vs S(8,7)
+![Digital Architecture](result/fixed_vs_floatt/RRC_float_fixedpoint.png)

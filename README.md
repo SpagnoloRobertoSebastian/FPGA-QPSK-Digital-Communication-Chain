@@ -123,3 +123,12 @@ BER is calculated as:
 
 ## Raised Cosine FIR coefficients — Floating Point vs S(8,7)
 ![Digital Architecture](result/fixed_vs_floatt/RRC_float_fixedpoint.png)
+
+## Eye diagram – floating-point vs. S(10,7) comparison
+![Digital Architecture](result/fixed_vs_floatt/diagram_eyes.png)
+
+## Constellation – floating-point comparison with S(10,7)
+![Digital Architecture](result/fixed_vs_floatt/constelation_phase0.png)
+![Digital Architecture](result/fixed_vs_floatt/constelation_phase1.png)
+![Digital Architecture](result/fixed_vs_floatt/constelation_phase2.png)
+![Digital Architecture](result/fixed_vs_floatt/constelation_phase3.png)
